@@ -5,9 +5,13 @@ import { Session } from "inspector";
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
+    // GoogleProvider({
+    //   clientId: process.env.GOOGLE_CLIENT_ID,
+    //   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    // }),
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientId: "1014147826852-nidf84gu17juvbea6u6o77j6m4ujtte9.apps.googleusercontent.com",
+      clientSecret:"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",
     }),
     // ...add more providers here
   ],
