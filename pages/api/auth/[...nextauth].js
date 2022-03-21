@@ -20,7 +20,7 @@ export default NextAuth({
 //       brandColor: "#13287",
 //       colorScheme: "auto",
 //   },
-
+secret: process.env.NEXTAUTH_SECRET,
 pages: {
     signIn: "/auth/signin",
 },
